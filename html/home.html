@@ -1,156 +1,280 @@
+
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
-
-     <style>
-           .searchbar {
-      padding-right: 220px;
-      padding-left: 0px;
-      width: 850px;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    .cartamount{
+      position: absolute;
+      top: 0;
+      right:13px;
+      font-size: 16px;
+      background-color: red;
+      color: white;
+      padding: 1px;
+      border-radius: 3px;
     }
-
-    .cart {
-      padding-left: 8px;
-      padding-right: auto;
+    .custom-icon{
+      font-size: 20px;
     }
-
-    .boat141 {
-      width: 300px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .proname {
-      width: 290px;
-    }
-
-    .product {
-      width: 300px;
-      margin: 10px;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .progrid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: lightgray;
-    }
-
-    @media (max-width: 768px) {
-      .product {
-        display: block;
-        margin: 10px auto;
-      }
-    }
-
-    #pro1 {
-      margin-left: 60px;
-    }
-     </style>  
+  </style>
 </head>
-  <body>
-    
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="color: aliceblue;font-family: 'Caprasimo', cursive;">TheCart</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house" style="color: #f4f7fa;"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-                <div class="searchbar">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                </div>
-                <div class="r&d">
-                  <button type="button" class="btn btn-dark"> <a  style="font-family: 'Belanosima', sans-serif;">Return & Order</a></button>
-              </div>
-                    <div class="cart">
-                        <button type="button" class="btn btn-dark"><i class="fas fa-shopping-cart" style="color: #f5f7fa;"></i> <a  style="font-family: 'Belanosima', sans-serif;">Cart</a></button>
-                    </div>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: aliceblue;font-family: 'Caprasimo', cursive;">TheCart</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <form class="d-flex ms-auto">
+        <input class="form-control me-2 custom-search-input" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+      <a class="btn btn-dark ms-3" href="./cart.html">
+      <i class="bi bi-cart3 custom-icon "></i> 
+        <div class="cartamount">0</div>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/boat141.jpg">
+        <div class="card-body">
+          <p class="card-text">boAt Airdopes 141 Bluetooth Truly Wireless in Ear Headphones with 42H Playtime,Low Latency Mode for Gaming, ENx Tech, IWP, IPX4 Water Resistance...</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹1999</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
           </div>
         </div>
-      </nav>
-      <div class="progrid">
-      <div id="pro1" class="product">
-        <img class="boat141" src="/images/boat141.jpg">
-        <p class="proname" style="font-size:12px; font-family: Arial, Helvetica, sans-serif;">boAt Airdopes 141 Bluetooth Truly Wireless in Ear Headphones with 42H Playtime,Low Latency Mode for Gaming, ENx Tech, IWP, IPX4 Water Resistance...</p>
-      <p style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;"> &#x20B9;<span style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">1099</span></p>
-      </div>
-      <div class="product">
-        <img class="boat141" src="/images/boat255.jpg">
-        <p class="proname" style="font-size:12px; font-family: Arial, Helvetica, sans-serif;">boAt Rockerz 255 Pro+ Bluetooth in Ear Earphones with Upto 60 Hours Playback, ASAP Charge, IPX7, Dual Pairing and Bluetooth v5.0(Active Black)</p>
-      <p style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;"> &#x20B9;<span style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">1199</span></p>
-      </div>
-
-      <div class="product">
-        <img class="boat141" src="/images/boatwatch.jpg">
-        <p class="proname" style="font-size:12px; font-family: Arial, Helvetica, sans-serif;">boAt Wave Call Smart Watch, Smart Talk with Advanced Dedicated Bluetooth Calling Chip, 1.69 HD Display with 550 NITS....</p>
-      <p style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;"> &#x20B9;<span style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">1299</span></p>
-      </div>
-
-      <div class="product">
-        <img class="boat141" src="/images/mi3.jpg">
-        <p class="proname" style="font-size:12px; font-family: Arial, Helvetica, sans-serif;">MI Power Bank 3i 20000mAh Lithium Polymer 18W Fast Power Delivery Charging | Input- Type C | Micro USB| Triple Output | Sandstone Black</p>
-      <p style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;"> &#x20B9;<span style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">2149</span></p>
-      </div>
-
-      <div class="product">
-        <img class="boat141" src="/images/redmi11t.jpg">
-        <p class="proname" style="font-size:12px; font-family: Arial, Helvetica, sans-serif;">Redmi Note 11T 5G (Stardust White, 8GB RAM, 128GB ROM) | Dimensity 810 5G | 33W Pro Fast Charging | Charger Included </p>
-      <p style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;"> &#x20B9;<span style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">18499</span></p>
-      </div>
-
-      <div class="product">
-        <img class="boat141" src="/images/keyboard.jpg">
-        <p class="proname" style="font-size:12px; font-family: Arial, Helvetica, sans-serif;">Redgear Blaze Semi-Mechanical wired Gaming keyboard with 3 colour backlit, full aluminium body & Windows key lock for PC ( Black )</p>
-      <p style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;"> &#x20B9;<span style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">600</span></p>
-      </div>
-
-      <div class="product">
-        <img class="boat141" src="/images/redgear.jpg">
-        <p class="proname" style="font-size:12px; font-family: Arial, Helvetica, sans-serif;">Zebronics Zeb-Transformer Gaming Keyboard and Mouse Combo (USB, Braided Cable)</p>
-      <p style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;"> &#x20B9;<span style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">1199</span></p>
-      </div>
-
-      <div class="product">
-        <img class="boat141" src="/images/head.jpg">
-        <p class="proname" style="font-size:12px; font-family: Arial, Helvetica, sans-serif;">Redgear Cosmo 7,1 Usb Gaming Wired Over Ear Headphones With Mic With Virtual Surround Sound,50Mm Driver, Rgb Leds & Remote Control(Black)</p>
-      <p style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;"> &#x20B9;<span style="font-size: 28px; font-family: Arial, Helvetica, sans-serif;">1699</span></p>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/boat255.jpg">
+        <div class="card-body">
+          <p class="card-text">boAt Rockerz 255 Pro+ Bluetooth in Ear Earphones with Upto 60 Hours Playback, ASAP Charge, IPX7, Dual Pairing and Bluetooth v5.0(Active Black)</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹1199</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/boatwatch.jpg">
+        <div class="card-body">
+          <p class="card-text">boAt Wave Call Smart Watch, Smart Talk with Advanced Dedicated Bluetooth Calling Chip, 1.69 HD Display with 550 NITS....</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹1299</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/mi3.jpg">
+        <div class="card-body">
+          <p class="card-text">MI Power Bank 3i 20000mAh Lithium Polymer 18W Fast Power Delivery Charging | Input- Type C | Micro USB| Triple Output | Sandstone Black</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹2149</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/redmi11t.jpg">
+        <div class="card-body">
+          <p class="card-text">Redmi Note 11T 5G (Stardust White, 8GB RAM, 128GB ROM) | Dimensity 810 5G | 33W Pro Fast Charging | Charger Included </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹18499</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/keyboard.jpg">
+        <div class="card-body">
+          <p class="card-text">Redgear Blaze Semi-Mechanical wired Gaming keyboard with 3 colour backlit, full aluminium body & Windows key lock for PC ( Black )</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹600</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/redgear.jpg">
+        <div class="card-body">
+          <p class="card-text">Zebronics Zeb-Transformer Gaming Keyboard and Mouse Combo (USB, Braided Cable) with Multicolour LED Effect | 12 Multimedia Keys |4 LED Modes</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹1199</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/head.jpg">
+        <div class="card-body">
+          <p class="card-text">Redgear Cosmo 7,1 Usb Gaming Wired Over Ear Headphones With Mic With Virtual Surround Sound,50Mm Driver, Rgb Leds & Remote Control(Black)</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹1699</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/mitab.jpg">
+        <div class="card-body">
+          <p class="card-text">Xiaomi Pad 6| Qualcomm Snapdragon 870| 144Hz Refresh Rate| 6GB, 128GB| 2.8K+ Display (11-inch/27.81cm)|1 Billion Colours| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹26999</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img class="card-img-top" src="/images/oneplus.jpg">
+        <div class="card-body">
+          <p class="card-text">OnePlus Pad 29.49cm (11.61 inch) LCD Display, 12GB RAM,256GB Storage, MediaTek Dimensity 9000, Android 13.1, 144HZ Refresh Rate, Dolby Vision Atmos, Wi-Fi with Cellular Data Sharing Tablet</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="card-text m-0">₹29000</p>
+            <div class="d-flex">
+              <i class="bi bi-dash-lg"></i>
+              <div class="quantity m-2">0</div>
+              <i class="bi bi-plus-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+<script>
+  function updateCart() {
+    const quantityElements = document.querySelectorAll(".quantity");
+    const quantities = Array.from(quantityElements).map((el) => parseInt(el.innerText));
+    const cartItemsCount = quantities.reduce((total, quantity) => total + quantity, 0);
+    const cartAmountElement = document.querySelector(".cartamount");
+    cartAmountElement.innerText = cartItemsCount;
+
+    const products = document.querySelectorAll(".card");
+    const productDetails = [];
+    products.forEach((product, index) => {
+      const name = product.querySelector(".card-text").innerText;
+      const price = product.querySelector(".card-body .card-text.m-0").innerText;
+      const imageSrc = product.querySelector(".card-img-top").getAttribute("src");
+
+      productDetails.push({
+        name: name,
+        price: price,
+        imageSrc: imageSrc,
+        quantity: quantities[index],
+      });
+    });
+
+    localStorage.setItem("cartItems", JSON.stringify(productDetails));
+  }
+
+  function handleQuantityChange(itemIndex, increment) {
+    if (itemIndex >= 0 && itemIndex < quantityElements.length) {
+      let currentQuantity = parseInt(quantityElements[itemIndex].innerText);
+      currentQuantity += increment ? 1 : -1;
+      currentQuantity = Math.max(currentQuantity, 0);
+      quantityElements[itemIndex].innerText = currentQuantity;
+      updateCart();
+    }
+  }
+  updateCart();
+  const quantityElements = document.querySelectorAll(".quantity");
+  const incrementButtons = document.querySelectorAll(".bi-plus-lg");
+  const decrementButtons = document.querySelectorAll(".bi-dash-lg");
+
+  incrementButtons.forEach((button, index) => {
+    button.addEventListener("click", () => handleQuantityChange(index, true));
+  });
+
+  decrementButtons.forEach((button, index) => {
+    button.addEventListener("click", () => handleQuantityChange(index, false));
+  });
+</script>
+</body>
 </html>
-
-
-<!-- <i class="fa-solid fa-location-dot style=color: #f5f7fa;"></i> -->
-
-
